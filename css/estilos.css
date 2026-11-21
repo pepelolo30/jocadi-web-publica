@@ -1,0 +1,147 @@
+/* JOCADI — estilos de la web */
+:root {
+  --rojo: #c8161d;
+  --rojo-oscuro: #9e1016;
+  --tinta: #1d1d1f;
+  --texto: #3a3a3c;
+  --suave: #6b6b70;
+  --fondo: #ffffff;
+  --fondo-alt: #f5f4f2;
+  --borde: #e3e1de;
+  --radio: 10px;
+  --ancho: 1120px;
+  --sombra: 0 1px 2px rgba(0,0,0,.06), 0 4px 16px rgba(0,0,0,.06);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--texto);
+  background: var(--fondo);
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--rojo); text-underline-offset: 2px; }
+a:hover { color: var(--rojo-oscuro); }
+h1, h2, h3 { color: var(--tinta); line-height: 1.2; margin: 0 0 .5em; }
+h1 { font-size: clamp(1.9rem, 4.5vw, 2.8rem); letter-spacing: -.01em; }
+h2 { font-size: clamp(1.45rem, 3vw, 1.9rem); }
+h3 { font-size: 1.15rem; }
+p { margin: 0 0 1em; }
+ul { padding-left: 1.2em; }
+
+.contenedor { max-width: var(--ancho); margin: 0 auto; padding: 0 20px; }
+.saltar { position: absolute; left: -999px; }
+.saltar:focus { left: 12px; top: 12px; background: #fff; padding: 8px 12px; z-index: 10; }
+
+/* Cabecera */
+.cabecera { background: var(--rojo); color: #fff; }
+.cabecera .contenedor {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 16px; flex-wrap: wrap; padding-top: 12px; padding-bottom: 12px;
+}
+.logo img { height: 40px; width: auto; }
+.menu { display: flex; flex-wrap: wrap; gap: 4px 6px; margin: 0; padding: 0; list-style: none; }
+.menu a {
+  display: block; padding: 6px 10px; border-radius: 6px;
+  color: #fff; text-decoration: none; font-weight: 600; font-size: .95rem;
+}
+.menu a:hover { background: rgba(255,255,255,.15); color: #fff; }
+.menu a[aria-current="page"] { background: #fff; color: var(--rojo); }
+
+/* Portada */
+.portada { position: relative; background: var(--tinta); color: #fff; }
+.portada img { width: 100%; height: clamp(320px, 55vh, 560px); object-fit: cover; opacity: .45; }
+.portada .texto {
+  position: absolute; inset: 0; display: flex; align-items: center;
+}
+.portada .texto .contenedor { width: 100%; }
+.portada h1 { color: #fff; max-width: 18ch; }
+.portada p { font-size: 1.15rem; max-width: 46ch; color: #f0f0f0; }
+
+.botones { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 1.2em; }
+.boton {
+  display: inline-block; padding: 11px 20px; border-radius: 8px;
+  background: var(--rojo); color: #fff; font-weight: 700; text-decoration: none;
+  border: 2px solid var(--rojo);
+}
+.boton:hover { background: var(--rojo-oscuro); border-color: var(--rojo-oscuro); color: #fff; }
+.boton.secundario { background: transparent; color: #fff; border-color: #fff; }
+.boton.secundario:hover { background: #fff; color: var(--tinta); }
+.boton.claro { background: #fff; color: var(--rojo); border-color: var(--rojo); }
+.boton.claro:hover { background: var(--rojo); color: #fff; }
+
+/* Secciones */
+.seccion { padding: 56px 0; }
+.seccion.alt { background: var(--fondo-alt); }
+.cabeza-pagina { padding: 44px 0 8px; }
+.cabeza-pagina p { font-size: 1.1rem; max-width: 60ch; color: var(--suave); }
+.intro { max-width: 62ch; }
+
+.rejilla { display: grid; gap: 20px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+.tarjeta {
+  background: #fff; border: 1px solid var(--borde); border-radius: var(--radio);
+  overflow: hidden; box-shadow: var(--sombra); display: flex; flex-direction: column;
+}
+.tarjeta img { aspect-ratio: 4 / 3; object-fit: cover; width: 100%; }
+.tarjeta .cuerpo { padding: 18px 20px 20px; flex: 1; display: flex; flex-direction: column; }
+.tarjeta .cuerpo p { color: var(--texto); }
+.tarjeta .cuerpo .mas { margin-top: auto; font-weight: 700; }
+
+/* Bloques de servicio */
+.servicio { display: grid; gap: 28px; grid-template-columns: 1fr; padding: 32px 0; border-top: 1px solid var(--borde); }
+.servicio:first-of-type { border-top: 0; }
+.servicio img { border-radius: var(--radio); aspect-ratio: 4 / 3; object-fit: cover; width: 100%; }
+@media (min-width: 820px) {
+  .servicio { grid-template-columns: 1fr 1.4fr; align-items: start; }
+}
+.lista-items { display: grid; gap: 14px 28px; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); margin-top: 8px; }
+.lista-items h3 { font-size: 1.02rem; margin-bottom: .25em; }
+.lista-items p { font-size: .97rem; margin: 0; }
+
+/* Galería */
+.galeria { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); padding: 0; margin: 0; list-style: none; }
+.galeria figure { margin: 0; }
+.galeria img { aspect-ratio: 4 / 3; object-fit: cover; width: 100%; border-radius: 8px; }
+.galeria figcaption { font-size: .9rem; color: var(--suave); padding: 6px 2px 0; }
+
+/* Datos de contacto */
+.datos { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.dato { background: #fff; border: 1px solid var(--borde); border-radius: var(--radio); padding: 20px; }
+.dato h3 { margin-bottom: .35em; }
+.dato p { margin: 0 0 .3em; }
+.aviso {
+  border-left: 4px solid var(--rojo); background: #fff6f6; padding: 12px 16px;
+  border-radius: 0 8px 8px 0; margin: 1em 0;
+}
+
+/* Llamada final */
+.llamada { background: var(--rojo); color: #fff; text-align: center; padding: 48px 0; }
+.llamada h2 { color: #fff; }
+.llamada p { color: #fff; opacity: .95; }
+.llamada .botones { justify-content: center; }
+
+/* Textos legales */
+.legal { max-width: 75ch; padding-bottom: 56px; }
+.legal h2 { font-size: 1.3rem; margin-top: 1.6em; }
+
+/* Pie */
+.pie { background: var(--tinta); color: #cfcfd3; font-size: .95rem; padding: 40px 0 24px; }
+.pie a { color: #fff; }
+.pie .columnas { display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+.pie h2 { color: #fff; font-size: 1rem; margin-bottom: .6em; }
+.pie ul { list-style: none; padding: 0; margin: 0; }
+.pie li { margin-bottom: .3em; }
+.pie .creditos { border-top: 1px solid #3a3a3e; margin-top: 28px; padding-top: 16px; font-size: .85rem; }
+
+@media (max-width: 640px) {
+  body { font-size: 16px; }
+  .contenedor { padding: 0 16px; }
+  .seccion { padding: 40px 0; }
+  .menu a { padding: 5px 8px; font-size: .9rem; }
+  .galeria { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .galeria figcaption { font-size: .82rem; }
+}
