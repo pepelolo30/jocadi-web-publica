@@ -62,9 +62,21 @@ ul { padding-left: 1.2em; }
 .idiomas a[aria-current="true"] { background: #fff; color: var(--rojo); }
 .cabecera nav { margin-left: auto; }
 @media (max-width: 900px) {
-  /* En pantallas estrechas: logo e idiomas en la primera fila, menú debajo */
+  /* En pantallas estrechas: logo e idiomas en la primera fila y, debajo,
+     el menú en una sola fila que se desliza con el dedo (carrusel) */
   .idiomas { order: 2; margin-left: auto; }
-  .cabecera nav { order: 3; width: 100%; margin-left: 0; }
+  .cabecera nav {
+    order: 3; width: calc(100% + 40px); margin: 0 -20px; position: relative;
+    overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+  }
+  .cabecera nav::-webkit-scrollbar { display: none; }
+  .cabecera nav .menu { flex-wrap: nowrap; width: max-content; padding: 0 20px; }
+  .menu a { white-space: nowrap; }
+  /* Difuminado en el borde por donde quedan más opciones (lo activa el script de la plantilla) */
+  .cabecera nav.mas-der { -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 48px), transparent); mask-image: linear-gradient(to right, #000 calc(100% - 48px), transparent); }
+  .cabecera nav.mas-izq { -webkit-mask-image: linear-gradient(to right, transparent, #000 48px); mask-image: linear-gradient(to right, transparent, #000 48px); }
+  .cabecera nav.mas-izq.mas-der { -webkit-mask-image: linear-gradient(to right, transparent, #000 48px, #000 calc(100% - 48px), transparent); mask-image: linear-gradient(to right, transparent, #000 48px, #000 calc(100% - 48px), transparent); }
 }
 
 /* Horario */
@@ -72,11 +84,11 @@ ul { padding-left: 1.2em; }
 .horario li { margin-bottom: .3em; }
 
 /* Portada */
-.portada { position: relative; background: var(--tinta); color: #fff; }
-.portada img { width: 100%; height: clamp(320px, 55vh, 560px); object-fit: cover; opacity: .45; }
-.portada .texto {
-  position: absolute; inset: 0; display: flex; align-items: center;
-}
+/* Foto y texto en la misma celda: si el texto no cabe, la portada crece en vez de taparse con la cabecera */
+.portada { display: grid; background: var(--tinta); color: #fff; }
+.portada > img, .portada .texto { grid-area: 1 / 1; }
+.portada img { width: 100%; height: 100%; min-height: clamp(320px, 55vh, 560px); object-fit: cover; opacity: .45; }
+.portada .texto { display: flex; align-items: center; padding: 32px 0; }
 .portada .texto .contenedor { width: 100%; }
 .portada h1 { color: #fff; max-width: 18ch; }
 .portada p { font-size: 1.15rem; max-width: 46ch; color: #f0f0f0; }
@@ -159,6 +171,8 @@ ul { padding-left: 1.2em; }
 @media (max-width: 640px) {
   body { font-size: 16px; }
   .contenedor { padding: 0 16px; }
+  .cabecera nav { width: calc(100% + 32px); margin: 0 -16px; }
+  .cabecera nav .menu { padding: 0 16px; }
   .seccion { padding: 40px 0; }
   .menu a { padding: 5px 8px; font-size: .9rem; }
   .galeria { grid-template-columns: repeat(2, 1fr); gap: 10px; }

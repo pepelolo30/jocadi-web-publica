@@ -42,6 +42,25 @@
     </div>
   </div>
 </header>
+<script>
+/* Menú deslizable en móvil: centra la página actual y difumina el borde por donde hay más opciones */
+(function () {
+  var nav = document.querySelector('.cabecera nav');
+  if (!nav) return;
+  var actual = nav.querySelector('[aria-current="page"]');
+  if (actual && nav.scrollWidth > nav.clientWidth) {
+    nav.scrollLeft = actual.offsetLeft - (nav.clientWidth - actual.offsetWidth) / 2;
+  }
+  function marcar() {
+    var max = nav.scrollWidth - nav.clientWidth;
+    nav.classList.toggle('mas-izq', nav.scrollLeft > 2);
+    nav.classList.toggle('mas-der', nav.scrollLeft < max - 2);
+  }
+  nav.addEventListener('scroll', marcar, { passive: true });
+  window.addEventListener('resize', marcar);
+  marcar();
+})();
+</script>
 
 <main id="contenido">
 <div class="contenedor legal">
