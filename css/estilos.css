@@ -87,8 +87,18 @@ ul { padding-left: 1.2em; }
 /* Foto y texto en la misma celda: si el texto no cabe, la portada crece en vez de taparse con la cabecera */
 .portada { display: grid; background: var(--tinta); color: #fff; }
 .portada > img, .portada .texto { grid-area: 1 / 1; }
-.portada img { width: 100%; height: 100%; min-height: clamp(320px, 55vh, 560px); object-fit: cover; opacity: .45; }
-.portada .texto { display: flex; align-items: center; padding: 32px 0; }
+.portada img { width: 100%; height: 100%; min-height: clamp(320px, 55vh, 560px); object-fit: cover; opacity: .6; }
+/* El texto va por encima de la foto (z-index) y con un velo oscuro detrás para que se lea bien */
+.portada .texto {
+  position: relative; z-index: 1;
+  display: flex; align-items: center; padding: 32px 0;
+  background: linear-gradient(90deg, rgba(18,18,20,.82) 0%, rgba(18,18,20,.6) 55%, rgba(18,18,20,.2) 100%);
+}
+.portada h1, .portada p { text-shadow: 0 1px 3px rgba(0,0,0,.45); }
+.portada .boton.secundario { background: rgba(0,0,0,.35); }
+@media (max-width: 820px) {
+  .portada .texto { background: rgba(18,18,20,.66); }
+}
 .portada .texto .contenedor { width: 100%; }
 .portada h1 { color: #fff; max-width: 18ch; }
 .portada p { font-size: 1.15rem; max-width: 46ch; color: #f0f0f0; }
@@ -101,7 +111,7 @@ ul { padding-left: 1.2em; }
 }
 .boton:hover { background: var(--rojo-oscuro); border-color: var(--rojo-oscuro); color: #fff; }
 .boton.secundario { background: transparent; color: #fff; border-color: #fff; }
-.boton.secundario:hover { background: #fff; color: var(--tinta); }
+.boton.secundario:hover, .portada .boton.secundario:hover { background: #fff; color: var(--tinta); }
 .boton.claro { background: #fff; color: var(--rojo); border-color: var(--rojo); }
 .boton.claro:hover { background: var(--rojo); color: #fff; }
 
