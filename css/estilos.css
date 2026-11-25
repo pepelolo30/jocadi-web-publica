@@ -165,6 +165,44 @@ ul { padding-left: 1.2em; }
 .llamada p { color: #fff; opacity: .95; }
 .llamada .botones { justify-content: center; }
 
+/* Migas de pan */
+.migas { padding-top: 20px; font-size: .9rem; color: var(--suave); }
+.migas ol { list-style: none; display: flex; flex-wrap: wrap; gap: 4px; margin: 0; padding: 0; }
+.migas li + li::before { content: "›"; margin: 0 6px 0 2px; color: var(--suave); }
+.migas a { color: var(--suave); }
+.migas a:hover { color: var(--rojo); }
+.migas + .cabeza-pagina { padding-top: 16px; }
+
+/* Pasos */
+.pasos { list-style: none; counter-reset: paso; display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); padding: 0; margin: 8px 0 0; }
+.pasos li { counter-increment: paso; background: #fff; border: 1px solid var(--borde); border-radius: var(--radio); padding: 18px 20px; }
+.pasos li::before { content: counter(paso); display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--rojo); color: #fff; font-weight: 700; margin-bottom: 10px; }
+.pasos h3 { font-size: 1.02rem; margin-bottom: .25em; }
+.pasos p { font-size: .97rem; margin: 0; }
+
+/* Preguntas frecuentes */
+.preguntas { max-width: 78ch; }
+.preguntas + h2 { margin-top: 40px; }
+.preguntas details { border-bottom: 1px solid var(--borde); }
+.preguntas details:first-child { border-top: 1px solid var(--borde); }
+.preguntas summary {
+  list-style: none; cursor: pointer; display: grid; grid-template-columns: 22px 1fr; gap: 10px;
+  padding: 15px 0; font-weight: 700; color: var(--tinta);
+}
+.preguntas summary::-webkit-details-marker { display: none; }
+.preguntas summary::before { content: "+"; font-size: 1.35rem; line-height: 1.1; color: var(--rojo); text-align: center; transition: transform .2s ease; }
+.preguntas details[open] summary::before { transform: rotate(45deg); }
+.preguntas summary:hover { color: var(--rojo); }
+.preguntas details p { margin: 0 0 16px 32px; }
+@media (prefers-reduced-motion: reduce) { .preguntas summary::before { transition: none; } }
+
+.mas { font-weight: 700; }
+
+/* Enlaces a servicios concretos */
+.enlaces { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 4px 0 16px; list-style: none; }
+.enlaces a { display: inline-block; padding: 5px 12px; border: 1px solid var(--borde); border-radius: 999px; font-size: .9rem; font-weight: 600; text-decoration: none; background: #fff; }
+.enlaces a:hover { border-color: var(--rojo); }
+
 /* Textos legales */
 .legal { max-width: 75ch; padding-bottom: 56px; }
 .legal h2 { font-size: 1.3rem; margin-top: 1.6em; }

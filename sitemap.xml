@@ -12,9 +12,21 @@
     <xhtml:link rel="alternate" hreflang="ca" href="https://www.jocadi.net/contacte.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.jocadi.net/es/contacto.html"/>
   </url>
+  <url><loc>https://www.jocadi.net/copisteria.html</loc><lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.jocadi.net/copisteria.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.jocadi.net/es/copisteria.html"/>
+  </url>
+  <url><loc>https://www.jocadi.net/estampacio-textil.html</loc><lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.jocadi.net/estampacio-textil.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.jocadi.net/es/estampacion-textil.html"/>
+  </url>
   <url><loc>https://www.jocadi.net/galetes.html</loc><lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="ca" href="https://www.jocadi.net/galetes.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.jocadi.net/es/cookies.html"/>
+  </url>
+  <url><loc>https://www.jocadi.net/gran-format.html</loc><lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.jocadi.net/gran-format.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.jocadi.net/es/gran-formato.html"/>
   </url>
   <url><loc>https://www.jocadi.net/impremta.html</loc><lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="ca" href="https://www.jocadi.net/impremta.html"/>
@@ -28,13 +40,25 @@
     <xhtml:link rel="alternate" hreflang="ca" href="https://www.jocadi.net/nosaltres.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.jocadi.net/es/nosotros.html"/>
   </url>
+  <url><loc>https://www.jocadi.net/preguntes-frequents.html</loc><lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.jocadi.net/preguntes-frequents.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.jocadi.net/es/preguntas-frecuentes.html"/>
+  </url>
   <url><loc>https://www.jocadi.net/privacitat.html</loc><lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="ca" href="https://www.jocadi.net/privacitat.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.jocadi.net/es/privacidad.html"/>
   </url>
+  <url><loc>https://www.jocadi.net/retolacio-vehicles.html</loc><lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.jocadi.net/retolacio-vehicles.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.jocadi.net/es/rotulacion-vehiculos.html"/>
+  </url>
   <url><loc>https://www.jocadi.net/retolacio.html</loc><lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="ca" href="https://www.jocadi.net/retolacio.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.jocadi.net/es/rotulacion.html"/>
+  </url>
+  <url><loc>https://www.jocadi.net/retols.html</loc><lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.jocadi.net/retols.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.jocadi.net/es/rotulos.html"/>
   </url>
   <url><loc>https://www.jocadi.net/treballs.html</loc><lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="ca" href="https://www.jocadi.net/treballs.html"/>
@@ -52,6 +76,18 @@
     <xhtml:link rel="alternate" hreflang="ca" href="https://www.jocadi.net/galetes.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.jocadi.net/es/cookies.html"/>
   </url>
+  <url><loc>https://www.jocadi.net/es/copisteria.html</loc><lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.jocadi.net/copisteria.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.jocadi.net/es/copisteria.html"/>
+  </url>
+  <url><loc>https://www.jocadi.net/es/estampacion-textil.html</loc><lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.jocadi.net/estampacio-textil.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.jocadi.net/es/estampacion-textil.html"/>
+  </url>
+  <url><loc>https://www.jocadi.net/es/gran-formato.html</loc><lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.jocadi.net/gran-format.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.jocadi.net/es/gran-formato.html"/>
+  </url>
   <url><loc>https://www.jocadi.net/es/imprenta.html</loc><lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="ca" href="https://www.jocadi.net/impremta.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.jocadi.net/es/imprenta.html"/>
@@ -64,13 +100,25 @@
     <xhtml:link rel="alternate" hreflang="ca" href="https://www.jocadi.net/nosaltres.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.jocadi.net/es/nosotros.html"/>
   </url>
+  <url><loc>https://www.jocadi.net/es/preguntas-frecuentes.html</loc><lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.jocadi.net/preguntes-frequents.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.jocadi.net/es/preguntas-frecuentes.html"/>
+  </url>
   <url><loc>https://www.jocadi.net/es/privacidad.html</loc><lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="ca" href="https://www.jocadi.net/privacitat.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.jocadi.net/es/privacidad.html"/>
   </url>
+  <url><loc>https://www.jocadi.net/es/rotulacion-vehiculos.html</loc><lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.jocadi.net/retolacio-vehicles.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.jocadi.net/es/rotulacion-vehiculos.html"/>
+  </url>
   <url><loc>https://www.jocadi.net/es/rotulacion.html</loc><lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="ca" href="https://www.jocadi.net/retolacio.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.jocadi.net/es/rotulacion.html"/>
+  </url>
+  <url><loc>https://www.jocadi.net/es/rotulos.html</loc><lastmod>2026-11-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://www.jocadi.net/retols.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.jocadi.net/es/rotulos.html"/>
   </url>
   <url><loc>https://www.jocadi.net/es/tienda.html</loc><lastmod>2026-11-25</lastmod>
     <xhtml:link rel="alternate" hreflang="ca" href="https://www.jocadi.net/botiga.html"/>
