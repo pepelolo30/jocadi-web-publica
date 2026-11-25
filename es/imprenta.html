@@ -24,6 +24,7 @@
 <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 <link rel="stylesheet" href="/css/estilos.css">
+<script data-goatcounter="https://jocadi.goatcounter.com/count" async src="/js/count.js"></script>
 
 </head>
 <body>
@@ -190,5 +191,11 @@
     <p class="creditos">© 2026 JOCADI DE L'AMETLLA DEL VALLÈS S.L.</p>
   </div>
 </footer>
+<script>
+document.querySelectorAll('a[href^="tel:"], a[href^="mailto:"]').forEach(function (a) {
+  a.dataset.goatcounterClick = a.href.startsWith('tel:') ? 'llamada' : 'correo';
+  a.dataset.goatcounterTitle = location.pathname;
+});
+</script>
 </body>
 </html>

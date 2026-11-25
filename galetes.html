@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Política de galetes · JOCADI</title>
-<meta name="description" content="Aquest web de JOCADI no utilitza galetes.">
+<meta name="description" content="Aquest web de JOCADI no utilitza galetes. Comptem les visites amb GoatCounter, sense galetes i sense saber qui ets.">
 <link rel="canonical" href="https://www.jocadi.net/galetes.html">
 <link rel="alternate" hreflang="ca" href="https://www.jocadi.net/galetes.html">
 <link rel="alternate" hreflang="es" href="https://www.jocadi.net/es/cookies.html">
@@ -13,7 +13,7 @@
 <meta property="og:locale" content="ca_ES">
 <meta property="og:site_name" content="JOCADI">
 <meta property="og:title" content="Política de galetes · JOCADI">
-<meta property="og:description" content="Aquest web de JOCADI no utilitza galetes.">
+<meta property="og:description" content="Aquest web de JOCADI no utilitza galetes. Comptem les visites amb GoatCounter, sense galetes i sense saber qui ets.">
 <meta property="og:url" content="https://www.jocadi.net/galetes.html">
 <meta property="og:image" content="https://www.jocadi.net/img/compartir.jpg">
 <meta property="og:image:width" content="1200">
@@ -24,6 +24,7 @@
 <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 <link rel="stylesheet" href="/css/estilos.css">
+<script data-goatcounter="https://jocadi.goatcounter.com/count" async src="/js/count.js"></script>
 
 </head>
 <body>
@@ -74,7 +75,9 @@
     <h1>Política de galetes</h1>
   </header>
 
-  <p>Aquest web <strong>no utilitza galetes</strong> (cookies), ni pròpies ni de tercers, i no inclou eines d'analítica, publicitat ni xarxes socials que et facin seguiment. Per això no et mostrem cap avís de galetes.</p>
+  <p>Aquest web <strong>no utilitza galetes</strong> (cookies), ni pròpies ni de tercers, i no inclou publicitat ni xarxes socials que et facin seguiment. Per això no et mostrem cap avís de galetes.</p>
+
+  <p>Per saber quantes persones visiten el web i quines pàgines miren, fem servir <a href="https://www.goatcounter.com/" rel="noopener">GoatCounter</a>, un comptador de visites que no fa servir galetes, no guarda la teva adreça IP i no sap qui ets. Només en surten xifres generals: pàgines vistes, d'on arriben les visites, país, idioma i tipus de dispositiu.</p>
 
   <p>Si fas clic a l'enllaç «Veure al mapa» de la pàgina de contacte, s'obrirà Google Maps, un servei extern amb la seva pròpia política de privacitat i de galetes.</p>
 
@@ -121,5 +124,11 @@
     <p class="creditos">© 2026 JOCADI DE L'AMETLLA DEL VALLÈS S.L.</p>
   </div>
 </footer>
+<script>
+document.querySelectorAll('a[href^="tel:"], a[href^="mailto:"]').forEach(function (a) {
+  a.dataset.goatcounterClick = a.href.startsWith('tel:') ? 'llamada' : 'correo';
+  a.dataset.goatcounterTitle = location.pathname;
+});
+</script>
 </body>
 </html>
